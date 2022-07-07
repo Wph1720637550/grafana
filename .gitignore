@@ -14,7 +14,7 @@ public/dist/tsconfig.tsbuildinfo
 /reports
 /e2e/tmp
 /scripts/grafana-server/tmp
-vendor/
+# vendor/
 /docs/menu.yaml
 /requests
 
@@ -102,11 +102,11 @@ debug.test
 # Ignore OSX indexing
 .DS_Store
 
-/vendor/**/*.py
-/vendor/**/*.xml
-/vendor/**/*.yml
-/vendor/**/*_test.go
-/vendor/**/.editorconfig
+# /vendor/**/*.py
+# /vendor/**/*.xml
+# /vendor/**/*.yml
+# /vendor/**/*_test.go
+# /vendor/**/.editorconfig
 *.orig
 
 /devenv/bulk-dashboards/*.json
