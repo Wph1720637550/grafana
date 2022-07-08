@@ -9,7 +9,7 @@ export interface BrandComponentProps {
 }
 
 const LoginLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/grafana_icon.svg" alt="Cereb" />;
+  return <img className={className} src="public/img/cereb_icon.svg" alt="Cereb" />;
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -42,7 +42,7 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
 };
 
 const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/grafana_icon.svg" alt="Cereb" />;
+  return <img className={className} src="public/img/cereb_icon.svg" alt="Cereb" />;
 };
 
 const LoginBoxBackground = () => {
