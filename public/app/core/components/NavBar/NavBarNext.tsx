@@ -103,12 +103,12 @@ export const NavBarNextUnconnected = React.memo(({ navBarTree }: Props) => {
       <div className={styles.spacer} />
 
       <NavBarSection>
-        {configItems.map((link, index) => (
+        {configItems.filter((link, index) => {link.id !== 'help'}).map((link, index) => (
           <NavBarItem
-            key={`${link.id}-${index}`}
-            isActive={isMatchOrChildMatch(link, activeItem)}
-            reverseMenuDirection
-            link={link}
+          key={`${link.id}-${index}`}
+          isActive={isMatchOrChildMatch(link, activeItem)}
+          reverseMenuDirection
+          link={link}
           >
             {link.icon && <Icon name={link.icon as IconName} size="xl" />}
             {link.img && <img src={link.img} alt={`${link.text} logo`} />}
