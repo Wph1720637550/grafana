@@ -10,7 +10,7 @@ pipeline {
             steps{
                 script {
                     docker.withTool('docker') {
-                        docker.withRegistry("", 'wph-docker-hub') {
+                        docker.withRegistry("", 'docker-hub-bot') {
                             def imageName = "squarecookie/grafana-custom-brand:$DOCKER_IMAGE_VERSION_PREFIX.$BUILD_NUMBER"
                             def dockerFileDir = "./"
 
